@@ -112,9 +112,9 @@ const checkingUserIsAdmin = () => {
     menu.insertAdjacentHTML(
       "beforeend",
       `
-        <li class="menu-item">
+         <li class="menu-item">
             <a data-value="contact" class="menu-item_link" href="./../admin/" target="_blank">پنل ادمین</a>
-        </li>
+         </li>
       `,
     );
   }
