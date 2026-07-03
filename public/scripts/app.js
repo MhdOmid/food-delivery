@@ -369,7 +369,6 @@ categoryBtns.forEach(function (categoryBtn) {
   categoryBtn.addEventListener("click", setCategory);
 });
 
-buttonRightOrder.addEventListener("click", goToPayPage);
 contentLinksMenu.forEach(function (contentLinkMenu) {
   contentLinkMenu.addEventListener("click", scrollTo);
 });
