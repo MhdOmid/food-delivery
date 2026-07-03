@@ -1,4 +1,30 @@
+[**<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Iran_%28official%29.svg/960px-Flag_of_Iran_%28official%29.svg.png" width="20"> Persian**](#-persian) | [**<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" width="20"> English**](#-english)
+
 # **<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Iran_%28official%29.svg/960px-Flag_of_Iran_%28official%29.svg.png" width="40"> Persian**
+
+# 🍔 سفارش آنلاین غذا
+
+یک وب‌سایت مدرن سفارش آنلاین غذا که با HTML، CSS، JavaScript و Appwrite توسعه داده شده است.
+
+## 🌐 نسخه آنلاین
+
+https://mhdomid.github.io/food-delivery/
+
+## ✨ امکانات
+
+* 🔐 احراز هویت کاربران
+* 🛒 سبد خرید
+* 👤 پنل مدیریت
+* 📱 طراحی واکنش‌گرا (Responsive)
+* ☁️ بک‌اند مبتنی بر Appwrite
+
+## 🛠️ فناوری‌های استفاده‌شده
+
+* HTML
+* CSS
+* JavaScript
+* Appwrite
+
 
 <a href="https://mhdomid.github.io/food-delivery/" target="_blank">وارد سایت شوید</a>
 
@@ -27,6 +53,29 @@
 ▪️تمامی بخش های سایت ریسپانسیو بوده و قابلیت اجرا در تمامی صفحه ها را دارد. با توجه به امکان وجود حجم انبوه داده در پنل کاربران با ورود به این پنل اخطار داده میشود که صفحه باید بزرگ باشد چرا که در غیر این صورت داده ها به صورت سالم نمایش داده نمیشوند
 
 # **<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" width="40"> English**
+
+# 🍔 Food Delivery
+
+A modern online food ordering website built with HTML, CSS, JavaScript and Appwrite.
+
+## 🌐 Live Demo
+
+https://mhdomid.github.io/food-delivery/
+
+## ✨ Features
+
+- 🔐 Authentication
+- 🛒 Shopping Cart
+- 👤 Admin Panel
+- 📱 Responsive Design
+- ☁️ Appwrite Backend
+
+## 🛠️ Technologies
+
+- HTML
+- CSS
+- JavaScript
+- Appwrite
 
 <a href="https://mhdomid.github.io/food-delivery/" target="_blank">Enter the site</a>
 
