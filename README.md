@@ -1,5 +1,7 @@
 # **<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Iran_%28official%29.svg/960px-Flag_of_Iran_%28official%29.svg.png" width="40"> Persian**
 
+<a href="https://mhdomid.github.io/food-delivery/">وارد سایت شوید</a>
+
 ▪️با ورود به صفحه ثبت نام و ورود به حساب کاربری امکان استفاده از تمامی قابلیت های سایت را خواهید داشت.
 
 ▪️در قسمت منو میتوانید با انتخاب دسته بندی مختلف غذا ، آنها را به صورت دسته بندی شده مشاهده کنید.
@@ -25,6 +27,8 @@
 ▪️تمامی بخش های سایت ریسپانسیو بوده و قابلیت اجرا در تمامی صفحه ها را دارد. با توجه به امکان وجود حجم انبوه داده در پنل کاربران با ورود به این پنل اخطار داده میشود که صفحه باید بزرگ باشد چرا که در غیر این صورت داده ها به صورت سالم نمایش داده نمیشوند
 
 # **<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" width="40"> English**
+
+<a href="https://mhdomid.github.io/food-delivery/">Enter the site</a>
 
 ▪️By entering the registration page and logging into your account, you will be able to use all the features of the site.
 
