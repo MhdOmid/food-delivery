@@ -113,7 +113,7 @@ const checkingUserIsAdmin = () => {
       "beforeend",
       `
          <li class="menu-item">
-            <a data-value="contact" class="menu-item_link" href="./../admin/" target="_blank">پنل ادمین</a>
+            <a data-value="contact" class="menu-item_link" href="admin/" target="_blank">پنل ادمین</a>
          </li>
       `,
     );
