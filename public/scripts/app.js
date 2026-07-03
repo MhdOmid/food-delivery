@@ -113,7 +113,7 @@ const checkingUserIsAdmin = () => {
       "beforeend",
       `
         <li class="menu-item">
-            <a data-value="contact" class="menu-item_link" href="../admin" target="_blank">پنل ادمین</a>
+            <a data-value="contact" class="menu-item_link" href="../../admin" target="_blank">پنل ادمین</a>
         </li>
       `,
     );
@@ -202,15 +202,6 @@ function scrollTo(event) {
     document.documentElement.scrollTo(0, searchLocationMain.offsetTop);
   } else if (event.target.closest("a").innerHTML.trim() === "صفحه اصلی") {
     document.documentElement.scrollTo(0, 0);
-  }
-}
-
-function goToPayPage() {
-  const price = +numberButtonLeft.innerHTML.split("$")[1];
-  if (price > 0) {
-    location.assign(
-      `https://omid-mohammadi-sample.liara.run/pay?price=${price}`,
-    );
   }
 }
 

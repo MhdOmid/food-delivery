@@ -38,12 +38,12 @@ const checkForLogin = (event) => {
     showToast("این نام کاربری وجود نداشته و اشتباه است", "failed");
   } else if (document.cookie.split("=")[1] === user.$id) {
     showToast(
-      "شما هم اکنون از <a style='color: #0095ff;' href='/'>این حساب</a> استفاده میکنید",
+      "شما هم اکنون از <a style='color: #0095ff;' href='../'>این حساب</a> استفاده میکنید",
       "failed",
     );
   } else if (document.cookie.includes("userID")) {
     showToast(
-      "ابتدا از حساب فعلی خود <a style='color: #0095ff;' href='/'>خارج شوید</a>",
+      "ابتدا از حساب فعلی خود <a style='color: #0095ff;' href='../'>خارج شوید</a>",
       "failed",
     );
   } else if (user && user?.password === passwordInputValue) {
