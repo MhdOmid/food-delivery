@@ -113,7 +113,7 @@ async function submitUser(realName, userName, password, email, admin) {
     localStorage.setItem("firstSignUp", "true");
     localStorage.setItem("userName", userName);
     localStorage.setItem("password", password);
-    location.replace("/signin");
+    location.replace("../signin");
   }
 }
 

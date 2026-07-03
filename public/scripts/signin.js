@@ -22,7 +22,7 @@ const logining = (id) => {
   const now = getDate();
   document.cookie = `userID=${id};path=/;expires=${now}`;
   localStorage.setItem("firstLogin", "true");
-  location.replace("/");
+  location.replace("../");
 };
 
 const checkForLogin = (event) => {
