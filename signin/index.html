@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود | مک دونالد</title>
+    <link href="../public/styles/login.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../public/styles/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  </head>
+
+  <body>
+    <audio class="success" src="audios/done.mp3"></audio>
+    <audio class="failed" src="audios/error.mp3"></audio>
+    <a href="/"><img src="/public/images/lgo.svg" /></a>
+
+    <form name="form1" id="signup" method="post">
+      <h1>وارد شوید</h1>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="نام کاربری خود را وارد کنید"
+      /><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="گذرواژه خود را وارد کنید"
+      /><br />
+      <input class="submit-btn" type="submit" value="ورود" /><br />
+      <p>
+        آیا از قبل حساب ندارید؟<a href="../signup" style="margin-right: 4px"
+          >ثبت نام کنید</a
+        >
+      </p>
+    </form>
+
+    <div class="toast-wrapper">
+      <!-- Data Loded By JS -->
+    </div>
+    <script src="/public/scripts/signin.js" type="module"></script>
+  </body>
+</html>

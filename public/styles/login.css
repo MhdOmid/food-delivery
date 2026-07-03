@@ -1,0 +1,264 @@
+/* fonts */
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins/poppins-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins/poppins-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins/poppins-semibold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins/poppins-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins/poppins-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins/poppins-light-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: B Farnaz;
+    font-style: normal;
+    src: url('../fonts/bfarnaz/B Farnaz_0.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: "Sans-Regular";
+
+    src: url(../fonts/Sans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Sans-Medium";
+
+    src: url(../fonts/Sans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Sans-DemiBold";
+
+    src: url(../fonts/Sans-DemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Sans-Bold";
+
+    src: url(../fonts/Sans-Bold.ttf);
+}
+
+body{
+    font-family: Sans-Medium;
+    padding: 0 2rem;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-color: #C90000;
+}
+
+form{
+    width: 20%;
+    padding: 3rem;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFC300;
+    box-shadow: 5px 5px 20px 13px #f3cd5283;
+}
+
+
+input{
+    font-family: Sans-Regular;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    
+}
+
+/* input[type="text"],input[type="password"],input[type="email"] {
+    padding: 10px;
+} */
+
+
+
+p{
+    color: black;
+}
+
+h1{
+    font-weight: 900;
+    color: #C90000;
+}
+
+
+
+input[type="submit"]{
+    background-color: #C90000;
+    color: #FFC300;
+    border: none;
+    font-size: 15px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    scale: 1.1;
+}
+
+.copy-right_title {
+    text-align: center;
+    color: #504F4F;
+    line-height: 4rem;
+    direction: rtl;
+}
+
+img {
+    width: 7rem;
+}
+
+form p {
+    font-weight: 300;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    color: #C90000;
+}
+
+form a {
+    text-decoration: none;
+    margin-left: 6px;
+    color: #c900007e;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 10px;
+    right: -400px;
+    transition: all 0.4s;
+    background-color: #FFC300;
+    padding: 35px;
+    z-index: 999;
+}
+
+.error-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.3rem;
+}
+
+.button-wrapper {
+    display: none;
+}
+
+.button-wrapper button {
+    outline: solid #C90000;
+    color: #C90000;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    transition: all 0.3s ease-in;
+    margin-right: 1rem;
+}
+
+.button-wrapper button:hover {
+    background-color: #C90000;
+    color: #FFC300;
+}
+
+.error-wrapper p {
+    margin: 0;
+    padding: 0;
+    font-family: Sans-Bold;
+    color: #C90000;
+}
+
+.tick-icon {
+    display: none;
+}
+
+.close-menu {
+    transform: rotate(45deg);
+}
+
+.svg-snoweb {
+    display: none;
+}
+
+@media (max-width: 949px){
+    form {
+        width: 40%;
+    }
+}
+
+@media (max-width: 540px){
+    form {
+        width: 60%;
+    }
+}
+@media (max-width: 409px){
+    form {
+        width: 80%;
+    }
+}
+@media (max-width: 360px){
+    .modal p {
+        font-size: 11px;
+    }
+}
+@media (max-width: 300px){
+    body {
+        padding: 0 3rem;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+@media (max-width: 287px){
+    form {
+        width: 100%;
+    }
+
+    form p {
+        font-size: 8px;
+    }
+
+    .modal p {
+        font-size: 8px;
+    }
+}

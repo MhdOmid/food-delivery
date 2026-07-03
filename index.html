@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="fa-IR" dir="rtl" class="red">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="MhdOmid,غذای آنلاین,فست فود,سفارش غذا" />
+    <title>مک دونالد</title>
+    <link rel="stylesheet" href="public/styles/style.css" />
+    <link rel="stylesheet" href="public/styles/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="logo.png" />
+  </head>
+
+  <body>
+    <audio class="success" src="public/audios/done.mp3"></audio>
+    <audio class="failed" src="public/audios/error.mp3"></audio>
+    <div class="menu-fixed">
+      <div class="container">
+        <div class="header-nav">
+          <img class="nav-logo" src="public/images/lgo.svg" alt="logo" />
+          <ul class="menu">
+            <li class="menu-item">
+              <a data-value="main" class="menu-item_link red-color" href="#"
+                >صفحه اصلی</a
+              >
+            </li>
+            <li class="menu-item">
+              <a data-value="menu" class="menu-item_link" href="#">منو</a>
+            </li>
+            <li class="menu-item">
+              <a data-value="sale" class="menu-item_link" href="#">فروش</a>
+            </li>
+            <li class="menu-item">
+              <a data-value="news" class="menu-item_link" href="#">اخبار</a>
+            </li>
+            <li class="menu-item">
+              <a data-value="contact" class="menu-item_link" href="#">تماس</a>
+            </li>
+          </ul>
+          <div class="button-wrapper">
+            <a href="signup" class="button-left">ثبت نام</a>
+            <a href="signin" class="button-right">ورود</a>
+          </div>
+
+          <!--  <input type="checkbox" id="input-menu" hidden>
+
+            <label for="input-menu"> -->
+          <svg
+            class="menu-icon"
+            width="35"
+            height="35"
+            viewBox="0 0 35 35"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.91675 20.4166C2.91675 19.6112 3.56967 18.9583 4.37508 18.9583H30.6251C31.4305 18.9583 32.0834 19.6112 32.0834 20.4166C32.0834 21.2221 31.4305 21.875 30.6251 21.875H4.37508C3.56967 21.875 2.91675 21.2221 2.91675 20.4166Z"
+              fill="#504F4F"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.375 14.5833C4.375 9.75082 8.29251 5.83331 13.125 5.83331H21.875C26.7075 5.83331 30.625 9.75082 30.625 14.5833C30.625 15.3887 29.9721 16.0416 29.1667 16.0416H5.83333C5.02792 16.0416 4.375 15.3887 4.375 14.5833ZM13.125 11.6666C13.125 12.4721 12.4721 13.125 11.6667 13.125C10.8613 13.125 10.2083 12.4721 10.2083 11.6666C10.2083 10.8612 10.8613 10.2083 11.6667 10.2083C12.4721 10.2083 13.125 10.8612 13.125 11.6666ZM17.5 13.125C18.3054 13.125 18.9583 12.4721 18.9583 11.6666C18.9583 10.8612 18.3054 10.2083 17.5 10.2083C16.6946 10.2083 16.0417 10.8612 16.0417 11.6666C16.0417 12.4721 16.6946 13.125 17.5 13.125ZM24.7917 11.6666C24.7917 12.4721 24.1388 13.125 23.3333 13.125C22.5279 13.125 21.875 12.4721 21.875 11.6666C21.875 10.8612 22.5279 10.2083 23.3333 10.2083C24.1388 10.2083 24.7917 10.8612 24.7917 11.6666Z"
+              fill="#504F4F"
+            />
+            <path
+              d="M30.625 26.25C30.625 27.8608 29.3192 29.1666 27.7083 29.1666H7.29167C5.68083 29.1666 4.375 27.8608 4.375 26.25C4.375 25.4446 5.02792 24.7916 5.83333 24.7916H29.1667C29.9721 24.7916 30.625 25.4446 30.625 26.25Z"
+              fill="#504F4F"
+            />
+          </svg>
+          <svg
+            class="close-menu"
+            width="35"
+            height="35"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M432 256C432 269.3 421.3 280 408 280h-160v160c0 13.25-10.75 24.01-24 24.01S200 453.3 200 440v-160h-160c-13.25 0-24-10.74-24-23.99C16 242.8 26.75 232 40 232h160v-160c0-13.25 10.75-23.99 24-23.99S248 58.75 248 72v160h160C421.3 232 432 242.8 432 256z"
+            />
+          </svg>
+
+          <!-- </label>
+           
+            <ul class="menu-side">
+                <li class="menu-item"><a class="menu-item_link red-color" href="#">Homepage</a></li>
+                <li class="menu-item"><a class="menu-item_link" href="#">Menu</a></li>
+                <li class="menu-item"><a class="menu-item_link" href="#">Sale off</a></li>                  The code is written with JavaScript
+                <li class="menu-item"><a class="menu-item_link" href="#">News</a></li>
+                <li class="menu-item"><a class="menu-item_link" href="#">Contact</a></li>
+            </ul> -->
+        </div>
+      </div>
+      <div class="progress"></div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="header-content_left">
+            <h1 class="content-left_title">
+              <span>غذای مورد علاقه</span><br />
+
+              <span>خود را سفارش دهید</span>
+            </h1>
+            <p class="content-left_text">
+              همبرگر طعم های زیادی دارد ، شما<br />
+              همبرگر با پنیر را امتحان کرده اید؟
+            </p>
+            <div class="buttons-order_wrapper b-o_desktop">
+              <h5 class="content-left_product">
+                سفارش کل : <span class="content-left_price">0</span>
+              </h5>
+              <div class="header-content_buttons">
+                <div class="button-left_order">
+                  <button
+                    class="button-wrapp_plus"
+                    id="button"
+                    onclick="addToBasket(event)"
+                  >
+                    <svg
+                      class="plus"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 5V19"
+                        stroke="#7D7C7C"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5 12H19"
+                        stroke="#7D7C7C"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <span class="number-button_left">0</span>
+                  <button
+                    class="button-wrapp_plus"
+                    id="button"
+                    onclick="minusFood(event)"
+                  >
+                    <svg
+                      class="mines"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 12H19"
+                        stroke="#7D7C7C"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <button
+                  class="button-right_order"
+                  onclick="openProFoodBasket(event)"
+                >
+                  <svg
+                    class="shop"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.9963 12C5.344 12 4.86633 12.6144 5.02717 13.2466L6.42488 18.7398C6.76319 20.0693 7.96032 21 9.33225 21H14.6652C16.0383 21 17.2362 20.0678 17.5734 18.7367L18.9644 13.2456C19.1245 12.6137 18.6469 12 17.9951 12H5.9963ZM9 16C9 15.4477 9.44771 15 10 15C10.5523 15 11 15.4477 11 16V17C11 17.5523 10.5523 18 10 18C9.44771 18 9 17.5523 9 17V16ZM13 16C13 15.4477 13.4477 15 14 15C14.5523 15 15 15.4477 15 16V17C15 17.5523 14.5523 18 14 18C13.4477 18 13 17.5523 13 17V16Z"
+                      fill="#323232"
+                    />
+                    <path
+                      d="M3 9C3 8.44772 3.44772 8 4 8H20C20.5523 8 21 8.44772 21 9C21 9.55228 20.5523 10 20 10H4C3.44772 10 3 9.55228 3 9Z"
+                      fill="#323232"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.7071 4.70711C11.0976 4.31658 11.0976 3.68342 10.7071 3.29289C10.3166 2.90237 9.68342 2.90237 9.29289 3.29289L8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711C8.68342 6.09763 9.31658 6.09763 9.70711 5.70711L10.7071 4.70711ZM13.2929 4.70711C12.9024 4.31658 12.9024 3.68342 13.2929 3.29289C13.6834 2.90237 14.3166 2.90237 14.7071 3.29289L15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711C15.3166 6.09763 14.6834 6.09763 14.2929 5.70711L13.2929 4.70711Z"
+                      fill="#323232"
+                    />
+                  </svg>
+                  <h3 class="order-text">اکنون بخرید</h3>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="header-content_right">
+            <img
+              src="public/images/Group 15.png"
+              alt=""
+              class="image-content_right"
+            />
+            <div class="delivery-food">
+              <div class="delivery-top">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3 13C3 8.02944 7.02944 4 12 4C16.9706 4 21 8.02944 21 13C21 17.9706 16.9706 22 12 22C7.02944 22 3 17.9706 3 13ZM13 9C13 8.44772 12.5523 8 12 8C11.4477 8 11 8.44772 11 9V13C11 13.2652 11.1054 13.5196 11.2929 13.7071L13.2929 15.7071C13.6834 16.0976 14.3166 16.0976 14.7071 15.7071C15.0976 15.3166 15.0976 14.6834 14.7071 14.2929L13 12.5858V9Z"
+                    fill="#323232"
+                  />
+                  <path
+                    d="M4.60006 5.30006C4.15823 5.63143 3.53143 5.54189 3.20006 5.10006C2.86869 4.65823 2.95823 4.03143 3.40006 3.70006L5.40006 2.20006C5.84189 1.86869 6.46869 1.95823 6.80006 2.40006C7.13143 2.84189 7.04189 3.46869 6.60006 3.80006L4.60006 5.30006Z"
+                    fill="#323232"
+                  />
+                  <path
+                    d="M18.6001 2.20018C18.1582 1.86881 17.5314 1.95835 17.2001 2.40018C16.8687 2.842 16.9582 3.46881 17.4001 3.80018L19.4001 5.30018C19.8419 5.63155 20.4687 5.542 20.8001 5.10018C21.1314 4.65835 21.0419 4.03155 20.6001 3.70018L18.6001 2.20018Z"
+                    fill="#323232"
+                  />
+                </svg>
+                <h1 class="delivery-food_title">تحویل</h1>
+              </div>
+              <p class="delivery-food_text">30 دقیقه</p>
+            </div>
+            <div class="buttons-order_wrapper b-o_mobile">
+              <h5 class="content-left_product">
+                سفارش کل : <span class="content-left_price">0</span>
+              </h5>
+              <div class="header-content_buttons">
+                <div class="button-left_order">
+                  <button
+                    class="button-wrapp_plus"
+                    id="button"
+                    onclick="addToBasket(event)"
+                  >
+                    <svg
+                      class="plus"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 5V19"
+                        stroke="#7D7C7C"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5 12H19"
+                        stroke="#7D7C7C"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <span class="number-button_left">0</span>
+                  <button
+                    class="button-wrapp_plus"
+                    id="button"
+                    onclick="minusFood(event)"
+                  >
+                    <svg
+                      class="mines"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 12H19"
+                        stroke="#7D7C7C"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <button
+                  class="button-right_order"
+                  onclick="openProFoodBasket(event)"
+                >
+                  <svg
+                    class="shop"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.9963 12C5.344 12 4.86633 12.6144 5.02717 13.2466L6.42488 18.7398C6.76319 20.0693 7.96032 21 9.33225 21H14.6652C16.0383 21 17.2362 20.0678 17.5734 18.7367L18.9644 13.2456C19.1245 12.6137 18.6469 12 17.9951 12H5.9963ZM9 16C9 15.4477 9.44771 15 10 15C10.5523 15 11 15.4477 11 16V17C11 17.5523 10.5523 18 10 18C9.44771 18 9 17.5523 9 17V16ZM13 16C13 15.4477 13.4477 15 14 15C14.5523 15 15 15.4477 15 16V17C15 17.5523 14.5523 18 14 18C13.4477 18 13 17.5523 13 17V16Z"
+                      fill="#323232"
+                    />
+                    <path
+                      d="M3 9C3 8.44772 3.44772 8 4 8H20C20.5523 8 21 8.44772 21 9C21 9.55228 20.5523 10 20 10H4C3.44772 10 3 9.55228 3 9Z"
+                      fill="#323232"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.7071 4.70711C11.0976 4.31658 11.0976 3.68342 10.7071 3.29289C10.3166 2.90237 9.68342 2.90237 9.29289 3.29289L8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711C8.68342 6.09763 9.31658 6.09763 9.70711 5.70711L10.7071 4.70711ZM13.2929 4.70711C12.9024 4.31658 12.9024 3.68342 13.2929 3.29289C13.6834 2.90237 14.3166 2.90237 14.7071 3.29289L15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711C15.3166 6.09763 14.6834 6.09763 14.2929 5.70711L13.2929 4.70711Z"
+                      fill="#323232"
+                    />
+                  </svg>
+                  <h3 class="order-text">اکنون بخرید</h3>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="main-menu">
+          <div class="main-menu_title">
+            <h4>منو</h4>
+            <div class="border-bottom_menu"></div>
+          </div>
+
+          <div class="main-menu_category">
+            <button data-category="all" class="button-category selected">
+              <svg
+                class="button-category_icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.2193 0.607955C10.607 -0.199478 9.39319 -0.199478 8.78095 0.607955L7.40692 2.42007C7.18858 2.70802 6.83187 2.85577 6.47387 2.80655L4.22093 2.49678C3.21707 2.35876 2.35876 3.21707 2.49678 4.22092L2.80655 6.47387C2.85577 6.83187 2.70802 7.18858 2.42007 7.40692L0.607955 8.78095C-0.199478 9.39319 -0.199478 10.607 0.607955 11.2193L2.42007 12.5933C2.70802 12.8116 2.85577 13.1683 2.80655 13.5263L2.49678 15.7793C2.35876 16.7831 3.21707 17.6415 4.22092 17.5034L6.47387 17.1937C6.83187 17.1444 7.18858 17.2922 7.40691 17.5801L8.78095 19.3923C9.39319 20.1997 10.607 20.1997 11.2193 19.3923L12.5933 17.5801C12.8116 17.2922 13.1683 17.1444 13.5263 17.1937L15.7793 17.5034C16.7831 17.6415 17.6415 16.7831 17.5034 15.7793L17.1937 13.5263C17.1444 13.1683 17.2922 12.8116 17.5801 12.5933L19.3923 11.2193C20.1997 10.607 20.1997 9.39319 19.3923 8.78095L17.5801 7.40692C17.2922 7.18858 17.1444 6.83187 17.1937 6.47387L17.5034 4.22092C17.6415 3.21707 16.7831 2.35876 15.7793 2.49678L13.5263 2.80655C13.1683 2.85577 12.8116 2.70802 12.5933 2.42007L11.2193 0.607955ZM12.7071 7.2929C12.3166 6.90237 11.6834 6.90237 11.2929 7.2929L7.29289 11.2929C6.90237 11.6834 6.90237 12.3166 7.29289 12.7071C7.68342 13.0976 8.31658 13.0976 8.70711 12.7071L12.7071 8.70711C13.0976 8.31658 13.0976 7.68342 12.7071 7.2929ZM8 9C7.44772 9 7 8.55229 7 8C7 7.44772 7.44772 7 8 7C8.55229 7 9 7.44772 9 8C9 8.55229 8.55229 9 8 9ZM12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z"
+                  fill="#504F4F"
+                />
+              </svg>
+
+              <span class="button-category_title">همه</span>
+            </button>
+
+            <button data-category="sandwich" class="button-category">
+              <svg
+                class="button-category_icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 14C2 13.4477 2.44772 13 3 13H21C21.5523 13 22 13.4477 22 14C22 14.5523 21.5523 15 21 15H3C2.44772 15 2 14.5523 2 14Z"
+                  fill="#504F4F"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3 10C3 6.68629 5.68629 4 9 4H15C18.3137 4 21 6.68629 21 10C21 10.5523 20.5523 11 20 11H4C3.44772 11 3 10.5523 3 10ZM9 8C9 8.55228 8.55228 9 8 9C7.44772 9 7 8.55228 7 8C7 7.44772 7.44772 7 8 7C8.55228 7 9 7.44772 9 8ZM12 9C12.5523 9 13 8.55228 13 8C13 7.44772 12.5523 7 12 7C11.4477 7 11 7.44772 11 8C11 8.55228 11.4477 9 12 9ZM17 8C17 8.55228 16.5523 9 16 9C15.4477 9 15 8.55228 15 8C15 7.44772 15.4477 7 16 7C16.5523 7 17 7.44772 17 8Z"
+                  fill="#504F4F"
+                />
+                <path
+                  d="M21 18C21 19.1046 20.1046 20 19 20H5C3.89543 20 3 19.1046 3 18C3 17.4477 3.44772 17 4 17H20C20.5523 17 21 17.4477 21 18Z"
+                  fill="#504F4F"
+                />
+              </svg>
+
+              <span class="button-category_title"> ساندویچ </span>
+            </button>
+
+            <button data-category="drink" class="button-category">
+              <svg
+                class="button-category_icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 19C2 18.4477 2.44772 18 3 18H17C17.5523 18 18 18.4477 18 19C18 19.5523 17.5523 20 17 20H3C2.44772 20 2 19.5523 2 19Z"
+                  fill="#504F4F"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4 4C2.89543 4 2 4.89543 2 6V8C2 12.4183 5.58172 16 10 16C12.5264 16 14.7793 14.8289 16.2454 13H18.5C20.433 13 22 11.433 22 9.5C22 7.567 20.433 6 18.5 6H18C18 4.89543 17.1046 4 16 4H4ZM18 8C18 9.0609 17.7935 10.0736 17.4185 11H18.5C19.3284 11 20 10.3284 20 9.5C20 8.67157 19.3284 8 18.5 8H18Z"
+                  fill="#504F4F"
+                />
+              </svg>
+
+              <span class="button-category_title"> نوشیدنی </span>
+            </button>
+
+            <button data-category="dessert" class="button-category">
+              <svg
+                class="button-category_icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.50668 15.3511C7.26153 14.6974 7.74481 14 8.44301 14H15.557C16.2552 14 16.7385 14.6974 16.4933 15.3511L14.7023 20.1273C14.2799 21.2538 13.203 22 12 22C10.797 22 9.72017 21.2538 9.29777 20.1273L7.50668 15.3511Z"
+                  fill="#504F4F"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.9754 6.5007C17.0026 6.7755 17.2239 7 17.5 7C18.8807 7 20 8.11929 20 9.5C20 10.8807 18.8807 12 17.5 12H12H6.5C5.11929 12 4 10.8807 4 9.5C4 8.11929 5.11929 7 6.5 7C6.77614 7 6.99737 6.7755 7.02462 6.5007C7.27516 3.9737 9.40709 2 12 2C14.5929 2 16.7248 3.9737 16.9754 6.5007Z"
+                  fill="#504F4F"
+                />
+              </svg>
+
+              <span class="button-category_title"> دسر </span>
+            </button>
+
+            <button data-category="toast" class="button-category">
+              <svg
+                class="button-category_icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 17.8C3 17.3582 3.35817 17 3.8 17H20.2C20.6418 17 21 17.3582 21 17.8C21 19.5673 19.5673 21 17.8 21H6.2C4.43269 21 3 19.5673 3 17.8Z"
+                  fill="#504F4F"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.8 17C3.35817 17 3 17.3582 3 17.8C3 19.5673 4.43269 21 6.2 21H17.8C19.5673 21 21 19.5673 21 17.8C21 17.3582 20.6418 17 20.2 17H3.8Z"
+                  fill="#504F4F"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.6785 7.35254C14.8842 6.94614 15 6.4866 15 6C15 4.34315 13.6569 3 12 3C10.3431 3 9 4.34315 9 6C9 6.4866 9.11585 6.94614 9.32147 7.35254C6.23647 8.32706 4 11.2119 4 14.619C4 14.8294 4.17056 15 4.38095 15H19.619C19.8294 15 20 14.8294 20 14.619C20 11.2119 17.7635 8.32706 14.6785 7.35254ZM13 6C13 6.55228 12.5523 7 12 7C11.4477 7 11 6.55228 11 6C11 5.44772 11.4477 5 12 5C12.5523 5 13 5.44772 13 6Z"
+                  fill="#504F4F"
+                />
+              </svg>
+
+              <span class="button-category_title"> سوخاری </span>
+            </button>
+          </div>
+
+          <div class="products-section">
+            <div class="menu-products">
+              <!-- Data Loded From Js -->
+            </div>
+          </div>
+        </section>
+
+        <section class="sale-off_main">
+          <div class="sale-title_wrapper">
+            <h1 class="sale-off_title">
+              جدید ترین ها
+              <div class="sale-off_border"></div>
+            </h1>
+          </div>
+
+          <div class="sale-off_products">
+            <!-- Data Loded By JS -->
+          </div>
+        </section>
+      </div>
+      <section class="mobile-app_main">
+        <div class="mobile-app_content">
+          <div class="mobile-app_image">
+            <img src="public/images/Group 22.png" />
+          </div>
+
+          <div class="mobile-app_info">
+            <h6 class="mobile-app_object">
+              پیشنهادات منحصر به فرد و موارد دیگر
+            </h6>
+            <h1 class="mobile-app_title">اپلیکیشن مک دونالد</h1>
+            <p class="mobile-app_text">
+              به عنوان برند جهانی درجه یک همواره در تلاش برای ارائه بهترین خدمات
+              برای شما مشتریان عزیز هستیم
+            </p>
+            <div class="mobile-app_buttons">
+              <a
+                href="https://apps.apple.com/us/app/mcdonalds/id922103212"
+                class="app-buttons_left"
+                target="_blank"
+              >
+                <img src="public/images/ammount.png" />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.mcdonalds.app&hl=en"
+                class="app-buttons_right"
+                target="_blank"
+              >
+                <img src="public/images/ammount (1).png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="search-location_main">
+        <div class="container">
+          <div class="search-location_content">
+            <h1 class="search-location_title">
+              یک فروشگاه غذا در نزدیکی خود پیدا کنید
+            </h1>
+            <p class="search-location_text">
+              آدرس فروشگاه راحتی را با خود مشاهده کنید
+            </p>
+
+            <form action="" class="search-location_box">
+              <input
+                type="text"
+                placeholder="نوشتن منطقه"
+                class="text-box_search"
+              />
+              <button type="submit" class="button-search">
+                مشاهده بر روی نقشه
+              </button>
+            </form>
+
+            <img
+              src="public/images/location2.png"
+              class="search-location_image1"
+            />
+            <img
+              src="public/images/location1.png"
+              class="search-location_image2"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-content_info">
+            <div class="content-info_wrapper">
+              <h6 class="content-info_title">مک دونالد</h6>
+            </div>
+
+            <div class="content-info_socials">
+              <a href="https://github.com/MhdOmid" target="_blank">
+                <img width="25" height="24" src="/public/images/github.webp" />
+              </a>
+              <a href="https://t.me/MhdOmid" target="_blank">
+                <img
+                  width="25"
+                  height="24"
+                  src="/public/images/telegram.webp"
+                />
+              </a>
+
+              <a href="https://ble.ir/MhdOmid" target="_blank">
+                <img width="25" height="24" src="/public/images/bale.webp" />
+              </a>
+            </div>
+          </div>
+          <div class="footer-content_links">
+            <h5 class="content-links_title">پیوند های مفید</h5>
+
+            <ul class="content-links_menu">
+              <li>
+                <a href="#"> صفحه اصلی </a>
+              </li>
+              <li>
+                <a href="#"> منو </a>
+              </li>
+              <li>
+                <a href="#"> فروش </a>
+              </li>
+              <li>
+                <a href="#"> اخبار </a>
+              </li>
+              <li>
+                <a href="#"> تماس </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-content_times">
+            <h5 class="content-times_title">ساعت کاری</h5>
+
+            <ul class="content-times_menu">
+              <li>دوشنبه - جمعه: 9:00 - 23:00</li>
+              <li>شنبه: 09:00 - 16:00</li>
+              <li>یکشنبه: 12:00 - 18:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="basket-screen-dropall">
+      <div class="basket-screen-drop"></div>
+      <div class="basket-screen">
+        <header class="basket-header">
+          <h1 class="basket-title" id="basket-title-header">سبد خرید</h1>
+          <button class="close-basket-btn">X</button>
+        </header>
+        <main class="basket">
+          <!-- Data Loded From JS -->
+          <p style="color: white">سبد خرید شما خالی است.</p>
+        </main>
+        <footer class="basket-footer">
+          <div class="final-basket-details">
+            <span class="price-text">مبلغ قابل پرداخت</span>
+            <span class="final-price">0</span>
+          </div>
+          <a onclick="detectBuy(event)" href="" class="buy-basket-btn">
+            <i class="bx bx-basket"></i>
+            <span>پرداخت</span>
+          </a>
+        </footer>
+      </div>
+    </div>
+    <div
+      class="trash-basket"
+      ondragover="preventOver(event)"
+      ondrop="getFoodId(event)"
+    >
+      <i
+        class="bx bx-trash"
+        ondragenter="hoverDrop(event)"
+        ondragleave="unHoverDrop()"
+      ></i>
+    </div>
+    <div class="basket mini-basket">
+      <!-- Data Loded From JS -->
+    </div>
+    <div class="toast-wrapper">
+      <!-- Data Loded By JS -->
+    </div>
+
+    <script src="public/scripts/app.js" type="module"></script>
+    <script src="public/scripts/basket.js" type="module"></script>
+  </body>
+</html>
