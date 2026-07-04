@@ -271,7 +271,7 @@ function disableSubmitBtn() {
   const submit = document.querySelector(".submit");
   submit.classList.add("disabled");
   submit.setAttribute("disabled", "");
-  submit.innerHTML += "<div class='loader'></div>";
+  submit.innerHTML += "<div class='loader in-submit-btn'></div>";
 }
 
 function openModal() {

@@ -2052,7 +2052,7 @@ input[type="number"] {
   border-bottom-color: #ffc300;
 }
 
-.loader:is(.dark *) {
+.loader:is(.dark *), .loader.in-submit-btn {
   border: 4px solid #dddddd63;
   border-left-color: #ddd;
   border-bottom-color: #ddd;
