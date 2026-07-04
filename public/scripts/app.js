@@ -149,24 +149,25 @@ const searchLocationMain = document.querySelector(".search-location_main");
 
 document.addEventListener("scroll", function () {
   let event;
+console.log(document.documentElement.scrollTop + 180,searchLocationMain.offsetTop);
 
   if (
-    document.documentElement.scrollTop >= mainMenu.offsetTop &&
-    document.documentElement.scrollTop <= saleOffMain.offsetTop
+    document.documentElement.scrollTop + 180 >= mainMenu.offsetTop &&
+    document.documentElement.scrollTop + 180 <= saleOffMain.offsetTop
   ) {
     event = document.querySelector("[data-value='menu']");
   } else if (
-    document.documentElement.scrollTop >= saleOffMain.offsetTop &&
-    document.documentElement.scrollTop <= mobileAppMain.offsetTop
+    document.documentElement.scrollTop + 180 >= saleOffMain.offsetTop &&
+    document.documentElement.scrollTop + 180 <= mobileAppMain.offsetTop
   ) {
     event = document.querySelector("[data-value='sale']");
   } else if (
-    document.documentElement.scrollTop >= mobileAppMain.offsetTop &&
-    document.documentElement.scrollTop <= searchLocationMain.offsetTop
+    document.documentElement.scrollTop + 180 >= mobileAppMain.offsetTop &&
+    document.documentElement.scrollTop + 180 <= searchLocationMain.offsetTop
   ) {
     event = document.querySelector("[data-value='news']");
   } else if (
-    document.documentElement.scrollTop >= searchLocationMain.offsetTop
+    document.documentElement.scrollTop + 180 >= searchLocationMain.offsetTop
   ) {
     event = document.querySelector("[data-value='contact']");
   } else if (document.documentElement.scrollTop >= 0) {
