@@ -359,12 +359,6 @@ template {
 }
 
 @font-face {
-  font-family: B Farnaz;
-  font-style: normal;
-  src: url("../fonts/bfarnaz/B Farnaz_0.ttf") format("ttf");
-}
-
-@font-face {
   font-family: "Sans-Regular";
 
   src: url(../fonts/Sans-Regular.ttf);
