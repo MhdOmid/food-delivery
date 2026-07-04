@@ -1,6 +1,6 @@
-[**<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Iran_%28official%29.svg/960px-Flag_of_Iran_%28official%29.svg.png" width="20"> Persian**](#-persian) | [**<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" width="20"> English**](#-english)
 
 # **<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Iran_%28official%29.svg/960px-Flag_of_Iran_%28official%29.svg.png" width="40"> Persian**
+[**<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" width="20"> Switch to English**](#-english)
 
 # 🍔 سفارش آنلاین غذا
 
@@ -53,6 +53,7 @@ https://mhdomid.github.io/food-delivery/
 ▪️تمامی بخش های سایت ریسپانسیو بوده و قابلیت اجرا در تمامی صفحه ها را دارد. با توجه به امکان وجود حجم انبوه داده در پنل کاربران با ورود به این پنل اخطار داده میشود که صفحه باید بزرگ باشد چرا که در غیر این صورت داده ها به صورت سالم نمایش داده نمیشوند
 
 # **<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" width="40"> English**
+[**<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Iran_%28official%29.svg/960px-Flag_of_Iran_%28official%29.svg.png" width="20">Switch to Persian**](#-persian)
 
 # 🍔 Food Delivery
 
