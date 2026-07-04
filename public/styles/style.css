@@ -473,6 +473,7 @@ template {
   padding: 4px;
   border-radius: 4px;
   border: none;
+  background-color: transparent;
 }
 
 .user-basket:hover {

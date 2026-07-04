@@ -149,7 +149,6 @@ const searchLocationMain = document.querySelector(".search-location_main");
 
 document.addEventListener("scroll", function () {
   let event;
-console.log(document.documentElement.scrollTop + 180,searchLocationMain.offsetTop);
 
   if (
     document.documentElement.scrollTop + 180 >= mainMenu.offsetTop &&
