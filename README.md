@@ -1,3 +1,6 @@
+<div alighn="center">
+<img src="public/images/preview.png" width="900px">
+</div>
 
 # **<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Iran_%28official%29.svg/960px-Flag_of_Iran_%28official%29.svg.png" width="40"> Persian**
 [**<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" width="20"> Switch to English**](#-english)
